@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="A To-Do List using CRUD operations.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    </head>
+    <body>
+        <h1>TO-DO LIST</h1>
+        <div class = "container">
+            <div class = "left">
+                <form id = "form">
+                    <textarea name = "post" id = "input" cols = "30" rows = "10" placeholder = "Write your posts here."></textarea>
+                    <br/><br/>
+                    <div id = "msg"></div>
+                    <button type = "submit" class = "post-button">Post</button>
+                    <!-- <button type = "submit" style = "display: none" class = "update-button">Update</button> -->
+                </form>
+            </div>
+            <div class = "right">
+                <h3>Your Posts</h3>
+                <div id = "posts">
+                    <h4>To-Do: </h4>
+                    <div id = "tasks-to-do">
+                        <div>
+                            <p>Hello world post 1</p>
+                            <span class="options">
+                                <i onClick="editPosts(this)" class="fas fa-edit"></i>
+                                <i onClick="deletePosts(this)" class="fas fa-trash-alt"></i>
+                                <input onClick = "toDoToDone(this)" type="checkbox" name="checkbox" class = "checkbox" />
+                            </span>
+                        </div>
+                    </div>
+                    <h4>Done: </h4>
+                    <div id = "tasks-done">
+                        <div>
+                            <p>Hello world post 2</p>
+                            <span class="options">
+                                <i onClick="editPosts(this)" class="fas fa-edit"></i>
+                                <i onClick="deletePosts(this)" class="fas fa-trash-alt"></i>
+                                <!--<input type="checkbox" name="checkbox" class = "checkbox" />-->
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>

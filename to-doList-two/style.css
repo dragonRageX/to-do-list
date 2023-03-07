@@ -1,0 +1,93 @@
+body
+{
+    font-family: sans-serif;
+    margin: 0px 50px;
+}
+
+h1
+{
+    margin-left: 250px;
+}
+
+.container
+{
+    display: flex;
+}
+
+.left
+{
+    margin: 20px 50px 0px 0px;
+}
+
+.right
+{
+    margin: 20px 20px 0px 50px;
+}
+
+#posts
+{
+    width: 400px;
+}
+
+i:hover
+{
+    cursor: pointer;
+}
+
+.options .checkbox:hover
+{
+    cursor: pointer;
+}
+
+#tasks-to-do div   /*SELECTS ALL THE div ELEMENTS PRESENT INSIDE THE ELEMENT WITH THE id = "posts"*/
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid pink;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 3px;
+    box-shadow: -2px -2px 3px rgba(231, 37, 37, 0.6);
+}
+
+#tasks-done div   /*SELECTS ALL THE div ELEMENTS PRESENT INSIDE THE ELEMENT WITH THE id = "posts"*/
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid pink;
+    border-radius: 10px;
+    padding: 0px 5px;
+    margin: 3px;
+    box-shadow: -2px -2px 3px rgba(231, 37, 37, 0.6);
+}
+
+.options
+{
+    display: flex;
+}
+
+.options i
+{
+    margin: 0px 10px;
+}
+
+.options .checkbox
+{
+    margin: 0px 10px;
+}
+
+#msg
+{
+    color: red;
+    background-color: rgb(238, 248, 98);
+    margin: 0px 0px 20px 0px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#input
+{
+    font-size: large;
+}
